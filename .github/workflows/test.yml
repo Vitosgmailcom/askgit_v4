@@ -16,4 +16,4 @@ jobs:
           path: ./.github/gh-pages
 
       - name: Run docker-compose
-        run: docker-compose up --exit-code-from test || true
+        run: docker-compose up #--exit-code-from test || true

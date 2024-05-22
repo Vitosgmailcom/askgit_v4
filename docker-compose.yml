@@ -9,3 +9,4 @@ services:
     volumes:
       - ./:/automation
     command: /bib/sh -c "ls -la && pytest -m health --alluredir=allure-results"
+    
