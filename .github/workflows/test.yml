@@ -1,0 +1,19 @@
+name: Running Helathcheck
+
+on: workflow_dispatch
+
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+
+      - name: Checkout gh-pages
+        uses: actions/checout@v3
+        with:
+          ref: gh-pages
+          path: ./.github/gh-pages
+
+      - name: Run docker-compose
+        run: docker-compose up --exit-code-from test || true
