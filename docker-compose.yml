@@ -8,5 +8,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bib/sh -c "ls -la && pytest -m health --alluredir=allure-results"
-    
+    command: /bib/sh -c "ls -la && pytest -m health" # --alluredir=allure-results"
