@@ -1,0 +1,72 @@
+{
+  "uid" : "5ba70a8044549766",
+  "name" : "test_healthcheck",
+  "fullName" : "tests.test_healthcheck#test_healthcheck",
+  "historyId" : "4226976f7b61b2e219bd327dcbcc9b87",
+  "time" : {
+    "start" : 1716951372199,
+    "stop" : 1716951372199,
+    "duration" : 0
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "14607c299582a9a3",
+      "name" : "log",
+      "source" : "14607c299582a9a3.txt",
+      "type" : "text/plain",
+      "size" : 47
+    } ],
+    "parameters" : [ ],
+    "stepsCount" : 0,
+    "hasContent" : true,
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "health"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests"
+  }, {
+    "name" : "suite",
+    "value" : "test_healthcheck"
+  }, {
+    "name" : "host",
+    "value" : "b01352d61ab5"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.test_healthcheck"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "tags" : [ "health" ]
+  },
+  "source" : "5ba70a8044549766.json",
+  "parameterValues" : [ ]
+}

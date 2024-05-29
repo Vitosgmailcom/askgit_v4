@@ -1,5 +1,22 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "tests.test_healthcheck",
+    "children" : [ {
+      "name" : "test_healthcheck",
+      "uid" : "5ba70a8044549766",
+      "parentUid" : "d849bd6a1e4335e6c2a594adc6412c75",
+      "status" : "passed",
+      "time" : {
+        "start" : 1716951372199,
+        "stop" : 1716951372199,
+        "duration" : 0
+      },
+      "flaky" : false,
+      "newFailed" : false,
+      "parameters" : [ ]
+    } ],
+    "uid" : "tests.test_healthcheck"
+  } ],
   "name" : "packages"
 }
