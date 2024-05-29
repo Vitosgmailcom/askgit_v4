@@ -1,4 +1,4 @@
-version: "3.9"
+version: "3.11212"
 
 services:
   test:
@@ -8,4 +8,4 @@ services:
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/sh -c "ls -la && pytest -m health --alluredir=allure-results"
+    command: /bin/sh -c "ls -la && pytest -m health --alluredir=allure-reports"

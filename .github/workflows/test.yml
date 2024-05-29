@@ -1,14 +1,12 @@
 name: Running health check
 
 on: push
-
 jobs:
   test:
     runs-on: ubuntu-latest
     steps:
       - name: Checkout
         uses: actions/checkout@v3
-
       - name: Checkout gh-pages
         uses: actions/checkout@v3
         with:
@@ -18,10 +16,12 @@ jobs:
       - name: Running docker-compose
         run: docker-compose up --exit-code-from test || true
 
+      - name: Running Allure reports
+        run: docker-compose run test /bin/sh -c "allure generate allure-results --clean -o allure-reports"
+
       - name: Deploy gh-pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.CI_TOKEN }}
           branch: gh-pages
           folder: allure-reports
-
