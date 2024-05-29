@@ -10,8 +10,8 @@ RUN apk update && \
     rm allure-2.13.8.tgz
 
 COPY ./ /automation
-COPY ./requirements.txt /autoamtion
+COPY ./requirements.txt /automation
 
 WORKDIR /automation
 
-RUN pip3 install -r requirements.txt
+RUN pip install -r requirements.txt

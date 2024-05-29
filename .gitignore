@@ -3,6 +3,6 @@ setup.py
 build
 dist
 UNKNOWN.egg-info
-
+tests.egg-info
 
 .env
