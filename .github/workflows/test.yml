@@ -26,14 +26,14 @@ jobs:
       - name: Copy from gh-pages
         run: |
           sudo mkdir -p allure-results/history
-          sudo cp -R ./.github/history/* allure-results/history/
+          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
 
       - name: Running Allure
         run: docker-compose run mytest /bin/sh -c "allure generate allure-results --clear -o allure-reports"
 
       - name: Copy to gh-pages
         run: |
-          sudo cp -R allure-results/history/* ./.github/history/
+          sudo cp -R allure-results/history/* ./.github/gh-pages/history/
 
       - name: Deploy Allure Reports
         uses: JamesIves/github-pages-deploy-action@4.1.5
