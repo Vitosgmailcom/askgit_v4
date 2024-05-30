@@ -1,11 +1,11 @@
 version: "3.12"
 
 services:
-  test:
+  mytest:
     image: python:3.12.0a4-alpine3.17
     build:
       context: .
       dockerfile: Dockerfile
     volumes:
       - ./:/automation
-    command: /bin/sh -c "ls -la && pytest -m health --alluredir=allure-results"
+    command: /bin/sh -c "ls -la && pytest -m health --alluredir=allure-reports"

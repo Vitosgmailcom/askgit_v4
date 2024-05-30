@@ -1,6 +1,7 @@
-name: Running Healthcheck
+name: Running test healthcheck
 
 on: push
+
 jobs:
   test:
     runs-on: ubuntu-latest
@@ -15,24 +16,23 @@ jobs:
           path: ./.github/gh-pages
 
       - name: Running docker-compose
-        run: docker-compose up --exit-code-from test || true
+        run: docker-compose up --exit-code-from mytest || true
 
-      - name: Copy history from gh-pages
+      - name: Copy from gh-pages
         run: |
           sudo mkdir -p allure-results/history
-          sudo cp -R ./.github/gh-pages/history/* allure-results/history/
+          sudo cp -R ./.github/history/* allure-results/history/
 
-      - name: Running Allure reports
-        run: docker-compose run test /bin/sh -c "allure generate allure-results --clean -o allure-reports"
+      - name: Running Allure
+        run: docker-compose run mytest /bin/sh -c "allure generate allure-results --clear -o allure-reports"
 
       - name: Copy to gh-pages
         run: |
-          sudo cp -R allure-results/history/* ./.github/gh-pages/history/
+          sudo cp -R allure-results/history/* ./.github/history/
 
-      - name: Deploy gh-pages
+      - name: Deploy Allure Reports
         uses: JamesIves/github-pages-deploy-action@4.1.5
         with:
           token: ${{ secrets.CI_TOKEN }}
           branch: gh-pages
           folder: allure-reports
-
