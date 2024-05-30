@@ -27,7 +27,7 @@ jobs:
 
       - name: Copy to gh-pages
         run: |
-          sudo cd -R /allure-results/history/* ./.github/gh-pages/history/
+          sudo cp -R /allure-results/history/* ./.github/gh-pages/history/
 
       - name: Deploy gh-pages
         uses: JamesIves/github-pages-deploy-action@4.1.5
