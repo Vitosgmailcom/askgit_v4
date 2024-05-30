@@ -11,7 +11,6 @@ RUN apk update && \
 
 COPY ./ /automation
 COPY ./requirements.txt /automation
-
 WORKDIR /automation
 
 RUN pip install -r requirements.txt
