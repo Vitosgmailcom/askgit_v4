@@ -18,8 +18,13 @@ jobs:
       - name: Running docker-compose
         run: docker-compose up --exit-code-from mytest || true
 
+#      - name: Copy from gh-pages
+#        run: |
+#          sudo mkdir -p allure-results/history
+#          sudo cp -R ./.github/history/* allure-results/history/
+#
       - name: Copy from gh-pages
-        run: |      
+        run: |
           sudo mkdir -p allure-results/history
           sudo cp -R ./.github/history/* allure-results/history/
 
