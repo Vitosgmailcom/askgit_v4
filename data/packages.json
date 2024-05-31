@@ -4,13 +4,13 @@
     "name" : "tests.smoke.test_smoke",
     "children" : [ {
       "name" : "Autorization API smoke test",
-      "uid" : "8a8fe0ea9a54e52e",
+      "uid" : "bf3512ea87ff8ed2",
       "parentUid" : "5e56d275cbe58415709400f8ff5214e7",
-      "status" : "broken",
+      "status" : "passed",
       "time" : {
-        "start" : 1717123132717,
-        "stop" : 1717123132896,
-        "duration" : 179
+        "start" : 1717123196293,
+        "stop" : 1717123196423,
+        "duration" : 130
       },
       "flaky" : false,
       "newFailed" : false,

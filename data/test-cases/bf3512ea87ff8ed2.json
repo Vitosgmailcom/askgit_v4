@@ -1,0 +1,113 @@
+{
+  "uid" : "bf3512ea87ff8ed2",
+  "name" : "Autorization API smoke test",
+  "fullName" : "tests.smoke.test_smoke.Test_smoke#test_smoke",
+  "historyId" : "f7189abcaff8f8e3b82c1f5214703a85",
+  "time" : {
+    "start" : 1717123196293,
+    "stop" : 1717123196423,
+    "duration" : 130
+  },
+  "status" : "passed",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1717123196293,
+      "stop" : 1717123196293,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "1943a39b00f06ae8",
+      "name" : "log",
+      "source" : "1943a39b00f06ae8.txt",
+      "type" : "text/plain",
+      "size" : 238
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : false,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smoke_sign_in"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.smoke"
+  }, {
+    "name" : "suite",
+    "value" : "test_smoke"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_smoke"
+  }, {
+    "name" : "host",
+    "value" : "56ae38cbc16b"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.smoke.test_smoke"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ ],
+    "history" : {
+      "statistic" : {
+        "failed" : 0,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 1,
+        "unknown" : 0,
+        "total" : 2
+      },
+      "items" : [ {
+        "uid" : "8a8fe0ea9a54e52e",
+        "status" : "broken",
+        "statusDetails" : "bdb.BdbQuit",
+        "time" : {
+          "start" : 1717123132717,
+          "stop" : 1717123132896,
+          "duration" : 179
+        }
+      } ]
+    },
+    "tags" : [ "smoke_sign_in", "smoke" ]
+  },
+  "source" : "bf3512ea87ff8ed2.json",
+  "parameterValues" : [ ]
+}

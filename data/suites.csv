@@ -1,2 +1,2 @@
 "Status","Start Time","Stop Time","Duration in ms","Parent Suite","Suite","Sub Suite","Test Class","Test Method","Name","Description"
-"broken","Fri May 31 02:38:52 GMT 2024","Fri May 31 02:38:52 GMT 2024","179","tests.smoke","test_smoke","Test_smoke","","","Autorization API smoke test",""
+"passed","Fri May 31 02:39:56 GMT 2024","Fri May 31 02:39:56 GMT 2024","130","tests.smoke","test_smoke","Test_smoke","","","Autorization API smoke test",""

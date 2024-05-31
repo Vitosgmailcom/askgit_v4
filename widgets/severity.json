@@ -1,11 +1,11 @@
 [ {
-  "uid" : "8a8fe0ea9a54e52e",
+  "uid" : "bf3512ea87ff8ed2",
   "name" : "Autorization API smoke test",
   "time" : {
-    "start" : 1717123132717,
-    "stop" : 1717123132896,
-    "duration" : 179
+    "start" : 1717123196293,
+    "stop" : 1717123196423,
+    "duration" : 130
   },
-  "status" : "broken",
+  "status" : "passed",
   "severity" : "normal"
 } ]
