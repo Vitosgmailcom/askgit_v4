@@ -1,12 +1,12 @@
 {
-  "uid" : "bf3512ea87ff8ed2",
+  "uid" : "5914167ef211fe75",
   "name" : "Autorization API smoke test",
   "fullName" : "tests.smoke.test_smoke.Test_smoke#test_smoke",
   "historyId" : "f7189abcaff8f8e3b82c1f5214703a85",
   "time" : {
-    "start" : 1717123196293,
-    "stop" : 1717123196423,
-    "duration" : 130
+    "start" : 1717123898440,
+    "stop" : 1717123898557,
+    "duration" : 117
   },
   "status" : "passed",
   "flaky" : false,
@@ -14,34 +14,49 @@
   "beforeStages" : [ {
     "name" : "setup",
     "time" : {
-      "start" : 1717123196293,
-      "stop" : 1717123196293,
+      "start" : 1717123898439,
+      "stop" : 1717123898439,
       "duration" : 0
     },
     "status" : "passed",
     "steps" : [ ],
     "attachments" : [ ],
     "parameters" : [ ],
+    "stepsCount" : 0,
     "attachmentsCount" : 0,
     "shouldDisplayMessage" : false,
-    "hasContent" : false,
-    "stepsCount" : 0
+    "hasContent" : false
   } ],
   "testStage" : {
     "status" : "passed",
-    "steps" : [ ],
+    "steps" : [ {
+      "name" : "Status code: 200",
+      "time" : {
+        "start" : 1717123898557,
+        "stop" : 1717123898557,
+        "duration" : 0
+      },
+      "status" : "passed",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "stepsCount" : 0,
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : false,
+      "hasContent" : false
+    } ],
     "attachments" : [ {
-      "uid" : "1943a39b00f06ae8",
+      "uid" : "9a142399faa08ee1",
       "name" : "log",
-      "source" : "1943a39b00f06ae8.txt",
+      "source" : "9a142399faa08ee1.txt",
       "type" : "text/plain",
       "size" : 238
     } ],
     "parameters" : [ ],
+    "stepsCount" : 1,
     "attachmentsCount" : 1,
     "shouldDisplayMessage" : false,
-    "hasContent" : true,
-    "stepsCount" : 0
+    "hasContent" : true
   },
   "afterStages" : [ ],
   "labels" : [ {
@@ -61,7 +76,7 @@
     "value" : "Test_smoke"
   }, {
     "name" : "host",
-    "value" : "56ae38cbc16b"
+    "value" : "6f9247f36169"
   }, {
     "name" : "thread",
     "value" : "1-MainThread"
@@ -91,11 +106,19 @@
         "failed" : 0,
         "broken" : 1,
         "skipped" : 0,
-        "passed" : 1,
+        "passed" : 2,
         "unknown" : 0,
-        "total" : 2
+        "total" : 3
       },
       "items" : [ {
+        "uid" : "bf3512ea87ff8ed2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717123196293,
+          "stop" : 1717123196423,
+          "duration" : 130
+        }
+      }, {
         "uid" : "8a8fe0ea9a54e52e",
         "status" : "broken",
         "statusDetails" : "bdb.BdbQuit",
@@ -108,6 +131,6 @@
     },
     "tags" : [ "smoke_sign_in", "smoke" ]
   },
-  "source" : "bf3512ea87ff8ed2.json",
+  "source" : "5914167ef211fe75.json",
   "parameterValues" : [ ]
 }
