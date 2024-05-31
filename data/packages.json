@@ -1,22 +1,22 @@
 {
   "uid" : "83edc06c07f9ae9e47eb6dd1b683e4e2",
   "children" : [ {
-    "name" : "tests.test_healthcheck",
+    "name" : "tests.smoke.test_smoke",
     "children" : [ {
-      "name" : "test_healthcheck",
-      "uid" : "7b345a0b81cb6c29",
-      "parentUid" : "d849bd6a1e4335e6c2a594adc6412c75",
-      "status" : "passed",
+      "name" : "Autorization API smoke test",
+      "uid" : "8a8fe0ea9a54e52e",
+      "parentUid" : "5e56d275cbe58415709400f8ff5214e7",
+      "status" : "broken",
       "time" : {
-        "start" : 1717101695327,
-        "stop" : 1717101695327,
-        "duration" : 0
+        "start" : 1717123132717,
+        "stop" : 1717123132896,
+        "duration" : 179
       },
       "flaky" : false,
       "newFailed" : false,
       "parameters" : [ ]
     } ],
-    "uid" : "tests.test_healthcheck"
+    "uid" : "tests.smoke.test_smoke"
   } ],
   "name" : "packages"
 }

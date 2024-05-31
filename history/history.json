@@ -1,4 +1,24 @@
 {
+  "f7189abcaff8f8e3b82c1f5214703a85" : {
+    "statistic" : {
+      "failed" : 0,
+      "broken" : 1,
+      "skipped" : 0,
+      "passed" : 0,
+      "unknown" : 0,
+      "total" : 1
+    },
+    "items" : [ {
+      "uid" : "8a8fe0ea9a54e52e",
+      "status" : "broken",
+      "statusDetails" : "bdb.BdbQuit",
+      "time" : {
+        "start" : 1717123132717,
+        "stop" : 1717123132896,
+        "duration" : 179
+      }
+    } ]
+  },
   "4226976f7b61b2e219bd327dcbcc9b87" : {
     "statistic" : {
       "failed" : 0,

@@ -1,0 +1,101 @@
+{
+  "uid" : "8a8fe0ea9a54e52e",
+  "name" : "Autorization API smoke test",
+  "fullName" : "tests.smoke.test_smoke.Test_smoke#test_smoke",
+  "historyId" : "f7189abcaff8f8e3b82c1f5214703a85",
+  "time" : {
+    "start" : 1717123132717,
+    "stop" : 1717123132896,
+    "duration" : 179
+  },
+  "status" : "broken",
+  "statusMessage" : "bdb.BdbQuit",
+  "statusTrace" : "self = <tests.smoke.test_smoke.Test_smoke object at 0x7f8dad879850>\n\n    @pytest.mark.smoke_sign_in\n    @allure.title('Autorization API smoke test')\n    def test_smoke(self):\n        result = Test_smoke.API_CALL.sign_in_existing_user()\n        import pdb; pdb.set_trace()\n>       assert result['user']['active'] == True, f\"Expected result is 'True' but API returned '{result['user']['active']}'\"\n\ntests/smoke/test_smoke.py:14: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/smoke/test_smoke.py:14: in test_smoke\n    assert result['user']['active'] == True, f\"Expected result is 'True' but API returned '{result['user']['active']}'\"\n/usr/local/lib/python3.12/bdb.py:90: in trace_dispatch\n    return self.dispatch_line(frame)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <_pytest.debugging.pytestPDB._get_pdb_wrapper_class.<locals>.PytestPdbWrapper object at 0x7f8dae1f6ab0>\nframe = <frame at 0x7f8dacce9d40, file '/automation/tests/smoke/test_smoke.py', line 14, code test_smoke>\n\n    def dispatch_line(self, frame):\n        \"\"\"Invoke user function and return trace function for line event.\n    \n        If the debugger stops on the current line, invoke\n        self.user_line(). Raise BdbQuit if self.quitting is set.\n        Return self.trace_dispatch to continue tracing in this scope.\n        \"\"\"\n        if self.stop_here(frame) or self.break_here(frame):\n            self.user_line(frame)\n>           if self.quitting: raise BdbQuit\nE           bdb.BdbQuit\n\n/usr/local/lib/python3.12/bdb.py:115: BdbQuit",
+  "flaky" : false,
+  "newFailed" : false,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1717123132716,
+      "stop" : 1717123132716,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "hasContent" : false,
+    "stepsCount" : 0
+  } ],
+  "testStage" : {
+    "status" : "broken",
+    "statusMessage" : "bdb.BdbQuit",
+    "statusTrace" : "self = <tests.smoke.test_smoke.Test_smoke object at 0x7f8dad879850>\n\n    @pytest.mark.smoke_sign_in\n    @allure.title('Autorization API smoke test')\n    def test_smoke(self):\n        result = Test_smoke.API_CALL.sign_in_existing_user()\n        import pdb; pdb.set_trace()\n>       assert result['user']['active'] == True, f\"Expected result is 'True' but API returned '{result['user']['active']}'\"\n\ntests/smoke/test_smoke.py:14: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \ntests/smoke/test_smoke.py:14: in test_smoke\n    assert result['user']['active'] == True, f\"Expected result is 'True' but API returned '{result['user']['active']}'\"\n/usr/local/lib/python3.12/bdb.py:90: in trace_dispatch\n    return self.dispatch_line(frame)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <_pytest.debugging.pytestPDB._get_pdb_wrapper_class.<locals>.PytestPdbWrapper object at 0x7f8dae1f6ab0>\nframe = <frame at 0x7f8dacce9d40, file '/automation/tests/smoke/test_smoke.py', line 14, code test_smoke>\n\n    def dispatch_line(self, frame):\n        \"\"\"Invoke user function and return trace function for line event.\n    \n        If the debugger stops on the current line, invoke\n        self.user_line(). Raise BdbQuit if self.quitting is set.\n        Return self.trace_dispatch to continue tracing in this scope.\n        \"\"\"\n        if self.stop_here(frame) or self.break_here(frame):\n            self.user_line(frame)\n>           if self.quitting: raise BdbQuit\nE           bdb.BdbQuit\n\n/usr/local/lib/python3.12/bdb.py:115: BdbQuit",
+    "steps" : [ ],
+    "attachments" : [ {
+      "uid" : "6a0a1fdab9c27497",
+      "name" : "log",
+      "source" : "6a0a1fdab9c27497.txt",
+      "type" : "text/plain",
+      "size" : 238
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "hasContent" : true,
+    "stepsCount" : 0
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smoke_sign_in"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.smoke"
+  }, {
+    "name" : "suite",
+    "value" : "test_smoke"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_smoke"
+  }, {
+    "name" : "host",
+    "value" : "2b0f221418aa"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.smoke.test_smoke"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Test defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "tags" : [ "smoke_sign_in", "smoke" ]
+  },
+  "source" : "8a8fe0ea9a54e52e.json",
+  "parameterValues" : [ ]
+}
