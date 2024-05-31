@@ -1,13 +1,17 @@
-from src.Helper.Autorization_API import Autorization_API
+from tests.base_test import BaseTest
 
 import pytest
+import allure
 
 @pytest.mark.smoke
-def test_smoke():
-    result = Autorization_API()
-    result = result.sign_in()
+class Test_smoke(BaseTest):
 
-    # import pdb; pdb.set_trace()
+    @pytest.mark.smoke_sign_in
+    @allure.title('Autorization API smoke test')
+    def test_smoke(self):
+        result = Test_smoke.API_CALL.sign_in_existing_user()
+        import pdb; pdb.set_trace()
+        assert result['user']['active'] == True, f"Expected result is 'True' but API returned '{result['user']['active']}'"
 
 
 
