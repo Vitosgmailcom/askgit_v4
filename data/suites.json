@@ -8,16 +8,16 @@
         "name" : "Test_smoke",
         "children" : [ {
           "name" : "Autorization API smoke test",
-          "uid" : "eb1065943233f9f3",
+          "uid" : "5dc0642cd60ec7a",
           "parentUid" : "3217d206b264155eb9e50ac7d3696a7c",
-          "status" : "passed",
+          "status" : "failed",
           "time" : {
-            "start" : 1717124163746,
-            "stop" : 1717124163884,
-            "duration" : 138
+            "start" : 1717124590506,
+            "stop" : 1717124590710,
+            "duration" : 204
           },
           "flaky" : false,
-          "newFailed" : false,
+          "newFailed" : true,
           "parameters" : [ ]
         } ],
         "uid" : "3217d206b264155eb9e50ac7d3696a7c"

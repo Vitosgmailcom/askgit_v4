@@ -1,5 +1,26 @@
 {
   "uid" : "4b4757e66a1912dae1a509f688f20b0f",
-  "children" : [ ],
+  "children" : [ {
+    "name" : "Product defects",
+    "children" : [ {
+      "name" : "AssertionError: Expected status code: 201, but API returned 200",
+      "children" : [ {
+        "name" : "Autorization API smoke test",
+        "uid" : "5dc0642cd60ec7a",
+        "parentUid" : "7e6432d2dbaede381acd985cc41f954e",
+        "status" : "failed",
+        "time" : {
+          "start" : 1717124590506,
+          "stop" : 1717124590710,
+          "duration" : 204
+        },
+        "flaky" : false,
+        "newFailed" : true,
+        "parameters" : [ ]
+      } ],
+      "uid" : "7e6432d2dbaede381acd985cc41f954e"
+    } ],
+    "uid" : "8fb3a91ba5aaf9de24cc8a92edc82b5d"
+  } ],
   "name" : "categories"
 }

@@ -1,0 +1,162 @@
+{
+  "uid" : "5dc0642cd60ec7a",
+  "name" : "Autorization API smoke test",
+  "fullName" : "tests.smoke.test_smoke.Test_smoke#test_smoke",
+  "historyId" : "f7189abcaff8f8e3b82c1f5214703a85",
+  "time" : {
+    "start" : 1717124590506,
+    "stop" : 1717124590710,
+    "duration" : 204
+  },
+  "status" : "failed",
+  "statusMessage" : "AssertionError: Expected status code: 201, but API returned 200",
+  "statusTrace" : "self = <tests.smoke.test_smoke.Test_smoke object at 0x7f6a46fbbef0>\n\n    @pytest.mark.smoke_sign_in\n    @allure.title('Autorization API smoke test')\n    def test_smoke(self):\n>       result = Test_smoke.API_CALL.sign_in_existing_user(expected_status_code=201)\n\ntests/smoke/test_smoke.py:12: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nsrc/Helper/Autorization_API.py:14: in sign_in_existing_user\n    result = self.API_call.POST_request(endpoint=endpoint, payload=payload, expected_status_code=expected_status_code)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <src.Utility.requestUtility.Request_API object at 0x7f6a46fb7740>\nendpoint = '/sign-in'\npayload = {'email': 'testuser_erqh@gmail.com', 'password': 'Password1'}\nheader = {'Content-Type': 'application/json'}, expected_status_code = 201\nkwargs = {}, url = 'http://ask-stage.portnov.com/api/v1/sign-in'\nresult = <Response [200]>, status_code = 200\n\n    def POST_request(self, endpoint, payload, header=None, expected_status_code=200, **kwargs):\n        if not header:\n            header = {\"Content-Type\": \"application/json\"}\n        url = self.baseUrl + endpoint\n        result = requests.post(url=url, data=json.dumps(payload), headers=header)\n        status_code = result.status_code\n        with allure.step(f\"Status code: {status_code}\"):\n>           assert status_code == int(expected_status_code), (f\"Expected status code: {expected_status_code}, \"\n                                                          f\"but API returned {status_code}\")\nE           AssertionError: Expected status code: 201, but API returned 200\n\nsrc/Utility/requestUtility.py:19: AssertionError",
+  "flaky" : false,
+  "newFailed" : true,
+  "beforeStages" : [ {
+    "name" : "setup",
+    "time" : {
+      "start" : 1717124590505,
+      "stop" : 1717124590505,
+      "duration" : 0
+    },
+    "status" : "passed",
+    "steps" : [ ],
+    "attachments" : [ ],
+    "parameters" : [ ],
+    "attachmentsCount" : 0,
+    "shouldDisplayMessage" : false,
+    "stepsCount" : 0,
+    "hasContent" : false
+  } ],
+  "testStage" : {
+    "status" : "failed",
+    "statusMessage" : "AssertionError: Expected status code: 201, but API returned 200",
+    "statusTrace" : "self = <tests.smoke.test_smoke.Test_smoke object at 0x7f6a46fbbef0>\n\n    @pytest.mark.smoke_sign_in\n    @allure.title('Autorization API smoke test')\n    def test_smoke(self):\n>       result = Test_smoke.API_CALL.sign_in_existing_user(expected_status_code=201)\n\ntests/smoke/test_smoke.py:12: \n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \nsrc/Helper/Autorization_API.py:14: in sign_in_existing_user\n    result = self.API_call.POST_request(endpoint=endpoint, payload=payload, expected_status_code=expected_status_code)\n_ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ \n\nself = <src.Utility.requestUtility.Request_API object at 0x7f6a46fb7740>\nendpoint = '/sign-in'\npayload = {'email': 'testuser_erqh@gmail.com', 'password': 'Password1'}\nheader = {'Content-Type': 'application/json'}, expected_status_code = 201\nkwargs = {}, url = 'http://ask-stage.portnov.com/api/v1/sign-in'\nresult = <Response [200]>, status_code = 200\n\n    def POST_request(self, endpoint, payload, header=None, expected_status_code=200, **kwargs):\n        if not header:\n            header = {\"Content-Type\": \"application/json\"}\n        url = self.baseUrl + endpoint\n        result = requests.post(url=url, data=json.dumps(payload), headers=header)\n        status_code = result.status_code\n        with allure.step(f\"Status code: {status_code}\"):\n>           assert status_code == int(expected_status_code), (f\"Expected status code: {expected_status_code}, \"\n                                                          f\"but API returned {status_code}\")\nE           AssertionError: Expected status code: 201, but API returned 200\n\nsrc/Utility/requestUtility.py:19: AssertionError",
+    "steps" : [ {
+      "name" : "Status code: 200",
+      "time" : {
+        "start" : 1717124590710,
+        "stop" : 1717124590710,
+        "duration" : 0
+      },
+      "status" : "failed",
+      "statusMessage" : "AssertionError: Expected status code: 201, but API returned 200\n",
+      "statusTrace" : "  File \"/automation/src/Utility/requestUtility.py\", line 19, in POST_request\n    assert status_code == int(expected_status_code), (f\"Expected status code: {expected_status_code}, \"\n",
+      "steps" : [ ],
+      "attachments" : [ ],
+      "parameters" : [ ],
+      "attachmentsCount" : 0,
+      "shouldDisplayMessage" : true,
+      "stepsCount" : 0,
+      "hasContent" : true
+    } ],
+    "attachments" : [ {
+      "uid" : "10cad72755c2c2b7",
+      "name" : "log",
+      "source" : "10cad72755c2c2b7.txt",
+      "type" : "text/plain",
+      "size" : 238
+    } ],
+    "parameters" : [ ],
+    "attachmentsCount" : 1,
+    "shouldDisplayMessage" : true,
+    "stepsCount" : 1,
+    "hasContent" : true
+  },
+  "afterStages" : [ ],
+  "labels" : [ {
+    "name" : "tag",
+    "value" : "smoke_sign_in"
+  }, {
+    "name" : "tag",
+    "value" : "smoke"
+  }, {
+    "name" : "parentSuite",
+    "value" : "tests.smoke"
+  }, {
+    "name" : "suite",
+    "value" : "test_smoke"
+  }, {
+    "name" : "subSuite",
+    "value" : "Test_smoke"
+  }, {
+    "name" : "host",
+    "value" : "11713fd59ae1"
+  }, {
+    "name" : "thread",
+    "value" : "1-MainThread"
+  }, {
+    "name" : "framework",
+    "value" : "pytest"
+  }, {
+    "name" : "language",
+    "value" : "cpython3"
+  }, {
+    "name" : "package",
+    "value" : "tests.smoke.test_smoke"
+  }, {
+    "name" : "resultFormat",
+    "value" : "allure2"
+  } ],
+  "parameters" : [ ],
+  "links" : [ ],
+  "hidden" : false,
+  "retry" : false,
+  "extra" : {
+    "severity" : "normal",
+    "retries" : [ ],
+    "categories" : [ {
+      "name" : "Product defects",
+      "matchedStatuses" : [ ],
+      "flaky" : false
+    } ],
+    "history" : {
+      "statistic" : {
+        "failed" : 1,
+        "broken" : 1,
+        "skipped" : 0,
+        "passed" : 3,
+        "unknown" : 0,
+        "total" : 5
+      },
+      "items" : [ {
+        "uid" : "eb1065943233f9f3",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717124163746,
+          "stop" : 1717124163884,
+          "duration" : 138
+        }
+      }, {
+        "uid" : "5914167ef211fe75",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717123898440,
+          "stop" : 1717123898557,
+          "duration" : 117
+        }
+      }, {
+        "uid" : "bf3512ea87ff8ed2",
+        "status" : "passed",
+        "time" : {
+          "start" : 1717123196293,
+          "stop" : 1717123196423,
+          "duration" : 130
+        }
+      }, {
+        "uid" : "8a8fe0ea9a54e52e",
+        "status" : "broken",
+        "statusDetails" : "bdb.BdbQuit",
+        "time" : {
+          "start" : 1717123132717,
+          "stop" : 1717123132896,
+          "duration" : 179
+        }
+      } ]
+    },
+    "tags" : [ "smoke_sign_in", "smoke" ]
+  },
+  "source" : "5dc0642cd60ec7a.json",
+  "parameterValues" : [ ]
+}
