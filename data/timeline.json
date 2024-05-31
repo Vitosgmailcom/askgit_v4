@@ -1,26 +1,26 @@
 {
   "uid" : "ab17fc5a4eb3bca4b216b548c7f9fcbc",
   "children" : [ {
-    "name" : "6f9247f36169",
+    "name" : "b9324f1b827e",
     "children" : [ {
       "name" : "1-MainThread",
       "children" : [ {
         "name" : "Autorization API smoke test",
-        "uid" : "5914167ef211fe75",
-        "parentUid" : "20116cb703c44ff92e404fdeb81207c7",
+        "uid" : "eb1065943233f9f3",
+        "parentUid" : "42cd6dd3031da6ba7a503e942220ee29",
         "status" : "passed",
         "time" : {
-          "start" : 1717123898440,
-          "stop" : 1717123898557,
-          "duration" : 117
+          "start" : 1717124163746,
+          "stop" : 1717124163884,
+          "duration" : 138
         },
         "flaky" : false,
         "newFailed" : false,
         "parameters" : [ ]
       } ],
-      "uid" : "20116cb703c44ff92e404fdeb81207c7"
+      "uid" : "42cd6dd3031da6ba7a503e942220ee29"
     } ],
-    "uid" : "0378cf46fba980109ea6ebcaf9754303"
+    "uid" : "506236664b0fc03092a455f7e633cd39"
   } ],
   "name" : "timeline"
 }

@@ -2,13 +2,13 @@
   "uid" : "b1a8273437954620fa374b796ffaacdd",
   "children" : [ {
     "name" : "Autorization API smoke test",
-    "uid" : "5914167ef211fe75",
+    "uid" : "eb1065943233f9f3",
     "parentUid" : "b1a8273437954620fa374b796ffaacdd",
     "status" : "passed",
     "time" : {
-      "start" : 1717123898440,
-      "stop" : 1717123898557,
-      "duration" : 117
+      "start" : 1717124163746,
+      "stop" : 1717124163884,
+      "duration" : 138
     },
     "flaky" : false,
     "newFailed" : false,
